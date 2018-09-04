@@ -1,0 +1,30 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5em;
+}
+body{
+    margin: 0;
+    background-color: lightblue;
+}
+
+.nav { grid-area: header; }
+.description { grid-area: estimate; }
+.choices { grid-area: choices1; }
+.choice__form { grid-area: form; }
+.footer { grid-area: footer; }
+
+/* FLEXBOX */
+
+.gridThis{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / repeat(6, 1fr);
+}
+
+.choice__options{
+    grid-area: 2 /1 / 5/ span 5;
+}
+
+.choice__option{
+    display: inline-grid;
+    
+}
