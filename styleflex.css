@@ -12,8 +12,9 @@ body{
 .main{
     background-color: white;
     box-shadow: 0px 0px 40px lightblue;
-    padding: 50px;
+    /* padding: 150px; */
     padding-top: 0;
+    padding-bottom: 0;
     margin: 100px;
     display: flex;   
     justify-content: center;
@@ -21,28 +22,32 @@ body{
 }
 .nav{
     margin: 0 0.8em 0 0;
-    align-self: flex-end;
+    width: 100%;
+    display: flex;
 }
 .nav__container{
-    justify-content: flex-end;
 }
 .logo{
-    margin-left: 5em;
+    justify-self: flex-start;
 }
 .nav__links{
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
 }
+
 .nav__link{
-    
     display: inline-flex;
+    justify-self: center;
+
 }
+
 .choice__options{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+    padding-bottom: 50px;
+}
+.choices h3{
+    padding-bottom: 20px;
 }
 .choice__option{
     display: flex;
@@ -73,6 +78,7 @@ body{
     align-content: center;
     width: 50%;
     margin: auto;
+    padding: 50px 0;
 }
 
 .choice__label{
@@ -98,6 +104,36 @@ body{
     margin-top:60px;
     background-color: rgb(51, 204, 255);
     border-radius: 26px;    
-    border: 1px solid white;
+    border: 1px solid rgb(51, 204, 255);
     color: white !important;
+    box-shadow: 0px 0px 10px lightgray;
+}
+
+footer{
+ background-color: aliceblue;  
+ 
+}
+.socialmedia{
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.socialmedia__item{
+    flex-direction: column;
+}
+.text--big{
+    font-size: 40px;
+}
+.bigdiv{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    text-align:center;
+}
+.bigdiv p{
+
+    width: 100%;
 }
