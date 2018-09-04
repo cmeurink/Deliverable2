@@ -1,8 +1,9 @@
-a,p,h1,h2,h3,h4,h5,h6, span, button{
+*{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5em;
 }
 body{
+    margin: 0;
     background-color: lightblue;
 }
 .container{
@@ -33,6 +34,9 @@ body{
     width: 70%;
     float:right;
 }
+.nav__link:hover{
+    background-color: rgb(51, 204, 255);
+}
 .nav__link a{
     display: block;
     text-align: center;
@@ -43,7 +47,6 @@ body{
 }
 .nav__link{
     float: right;
-    
 }
 .text--center{
     text-align:center;
@@ -64,6 +67,40 @@ body{
     border: 1px solid white;
     color: white !important;
 }
+.description{
+    padding-top: 40px;
+}
+.description *{
+    font-size:80%;
+    color: grey;
+}
+
+/* CHOICES */
+.img--center{
+    display:block;
+    margin:auto;
+}
+
+.choice__option{
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 10px;
+    margin: 0 15px;
+    border: 1px solid rgb(51, 204, 255);
+    border-radius: 3px;
+    width: 20%;
+    height: 80%;
+    box-shadow: 0px 0px 5px rgb(125, 125, 125);
+
+}
+@media screen and (max-width: 980px) {
+    .choice__option{
+         width: 100%;
+    }
+ }
+.choice__options{
+    height: 150px;
+}
 
 /* FORM */
 
@@ -73,10 +110,10 @@ body{
 }
 
 .choice__label{
-
+    font-weight: bold;
 }
 
-.choice__inputfield{
+.choice__field{
     border: none;
     padding: 5px 15px;
     margin: 0;
@@ -85,19 +122,32 @@ body{
     border-bottom: 1px double black;
 }
 
-.choice__inputfield:focus{
+.choice__field:focus{
     outline:none !important;
     border-bottom: 1px double rgb(51, 204, 255);
 }
 .button-blue{
-    padding: 0;
-    margin: 0;
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top:60px;
     background-color: rgb(51, 204, 255);
     border-radius: 26px;    
     border: 1px solid white;
     color: white !important;
 }
 
+/* FOOTER */
 
-
-
+.footer{
+    background-color: lightgray;
+    bottom: 0;
+    width: 100%;
+}
+.socialmedia{
+    list-style-type: none;
+    text-align: center;
+}
+.socialmedia__item{
+    display: inline-block;
+    margin: 0 30px;
+}
