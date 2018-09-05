@@ -5,66 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Deliverable 2 - Design 9</title>
     <!-- <link rel="stylesheet" href="styleplain.css"> -->
-    <!-- <link rel="stylesheet" href="stylegrid.css"> -->
-    <link rel="stylesheet" href="styleflex.css">
+    <link rel="stylesheet" href="stylegrid.css">
+    <!-- <link rel="stylesheet" href="styleflex.css"> -->
     <link rel="stylesheet" href="../all.css">
     <script src="../all.js"></script>
 </head>
 <body>
     <div class="main">
+        <!-- DONE! -->
         <nav class="nav">
-            <ul class="nav__links">
-                    <p class="logo">Theria</p>   
+                <img src="logo.png" alt="logo" class="logo">   
 
+            <ul class="nav__links">
                 <li class="nav__link"><a href="#">What we do</a></li>
                 <li class="nav__link"><a href="#">About us</a></li>
                 <li class="nav__link"><a href="#">Portfolio</a></li>
                 <li class="nav__link"><a href="#">Blog</a></li>
                 <li class="nav__link"><a class="btn btn--white" href="#">Estimate project</a></li>
             </ul>
-        </nav>
-        <div class="container">    
-            <div class="description text--center">
-                <span>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, aut.
-                </span>
+        </nav> 
+
+        <div class="description text--center">
+            <span class="text--grey">
+                WEB? MOBILE? E-COMMERCE?
+            </span>
+        </div>
+
+        <div class="bigdiv text--center">
+            <h1 class="text--blue text--big">Estimate project</h1>
+            <p class="text--grey">Fill out this simple form. Our team will contact you promptly to discuss next steps. In the meantime feel free to read this article about the estimation process.</p>
+        </div>
+
+        <div class="choices">
+            <h3 class="text--blue text--center">What is the device of your project?</h3>
+            <div class="choice__options">
+                <div class="choice__option text--center"><a href=""><img class="img--center" src="pc.png" alt="pc.png"/><p class="text--blue">Desktop</p></a></div>
+                <div class="choice__option text--center"><a href=""><img class="img--center" src="phone.png" alt="phone.png"/><p class="text--blue">mobile</p></a></div>
+                <div class="choice__option text--center"><a href=""><img class="img--center" src="all.png" alt="all.png"/><p class="text--blue">RWD</p></a></div>
+                <div class="choice__option text--center"><a href=""><img class="img--center" src="other.png" alt="other.png"/><p class="text--blue">other</p></a></div>
             </div>
-            <div class="bigdiv">
-                <h1 class="text--blue text--center text--big">Estimate project</h1>
-                <p>Fill out this simple form. Our team will contact you promptly to discuss next steps. In the meantime feel free to read this article about the estimation process.</p>
+
+            <h3 class="text--blue text--center">What is the scope of your project?</h3>
+            <div class="choice__options">
+                <div class="choice__option text--center"><a href=""><img class="img--center" src="frontend.png" alt="pc.png"/><p class="text--blue">front end</p></a></div>
+                <div class="choice__option text--center"><a href=""><img class="img--center" src="backend.png" alt="pc.png"/><p class="text--blue">backend</p></a></div>
+                <div class="choice__option text--center"><a href=""><img class="img--center" src="design.png" alt="pc.png"/><p class="text--blue">Design</p></a></div>
+                <div class="choice__option text--center"><a href=""><img class="img--center" src="other.png" alt="other.png"/><p class="text--blue">other</p></a></div>
             </div>
 
-            <div class="choices">
-                <h3 class="text--blue text--center">What is the device of your project?</h3>
-                <div class="choice__options">
-                    <div class="choice__option text--center"><a href=""><img class="img--center" src="pc.png" alt="pc.png"/><p class="text--blue">Desktop</p></a></div>
-                    <div class="choice__option text--center"><a href=""><img class="img--center" src="phone.png" alt="phone.png"/><p class="text--blue">mobile</p></a></div>
-                    <div class="choice__option text--center"><a href=""><img class="img--center" src="all.png" alt="all.png"/><p class="text--blue">RWD</p></a></div>
-                    <div class="choice__option text--center"><a href=""><img class="img--center" src="other.png" alt="other.png"/><p class="text--blue">other</p></a></div>
-                </div>
+            <h3 class="text--blue text--center">Fill in the form and get an estimate</h3>
+            <form class="choice__form" action="POST">
+                <label for="name" class="choice__label">Name</label>
+                <input type="text" name="name" id="" class="choice__field">
 
-                <h3 class="text--blue text--center">What is the scope of your project?</h3>
-                <div class="choice__options">
-                    <div class="choice__option text--center"><a href=""><img class="img--center" src="frontend.png" alt="pc.png"/><p class="text--blue">front end</p></a></div>
-                    <div class="choice__option text--center"><a href=""><img class="img--center" src="backend.png" alt="pc.png"/><p class="text--blue">backend</p></a></div>
-                    <div class="choice__option text--center"><a href=""><img class="img--center" src="design.png" alt="pc.png"/><p class="text--blue">Design</p></a></div>
-                    <div class="choice__option text--center"><a href=""><img class="img--center" src="other.png" alt="other.png"/><p class="text--blue">other</p></a></div>
-                </div>
+                <label for="email" class="choice__label">Your Email address</label>
+                <input type="email" name="email" id="" class="choice__field">
 
-                <h3 class="text--blue text--center">Fill in the form and get an estimate</h3>
-                <form class="choice__form" action="POST">
-                    <label for="name" class="choice__label">Name</label>
-                    <input type="text" name="name" id="" class="choice__field">
+                <label for="desc" class="choice__label">Short description of your idea...</label>
+                <textarea type="text" name="desc" id="" class="choice__field"></textarea>
 
-                    <label for="email" class="choice__label">Your Email address</label>
-                    <input type="email" name="email" id="" class="choice__field">
-
-                    <label for="desc" class="choice__label">Short description of your idea...</label>
-                    <textarea type="text" name="desc" id="" class="choice__field"></textarea>
-
-                    <button class="button-blue" type="submit">Submit!</button>
-                </form>
-            </div>
+                <button class="button-blue button__submit" type="submit">Submit!</button>
+            </form>
         </div>
         <footer class="footer">
             <ul class="socialmedia">
@@ -76,5 +77,6 @@
             </ul>
         </footer>
     </div>
+   
 </body>
 </html>
