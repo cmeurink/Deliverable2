@@ -20,10 +20,14 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-
+.nav{
+    margin: 0 100px;
+    display: flex;
+}
 .logo{
     margin: 0 !important;
     justify-self: center;
+    align-self: center;
 }
 .nav__links{
     flex-wrap: wrap;
@@ -33,9 +37,40 @@ body{
     list-style-type: none;
     padding: 20 0;
     margin: 0;
+    flex:1;
 }
-.nav__link{
-    padding: 0 20px;
+.nav__link{ 
+    display: inline;
+    margin: 0 10px;
+    border-radius: 26px;
+}
+.nav__link:hover{
+    background-color: rgb(51, 204, 255);
+    
+}
+.nav__link a{
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: grey;
+    font-weight:bold;
+}
+.nav__link:hover a{
+    color: white;
+}
+.btn--white{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    border-radius: 26px;    
+    border: 1px solid rgb(51, 204, 255);
+    color: rgb(51, 204, 255) !important;
+}
+.btn--white:hover{
+    background-color: rgb(51, 204, 255);
+    border: 1px solid white;
+    color: white !important;
 }
 
 .choice__options{
@@ -67,6 +102,9 @@ body{
 .text--blue{
     color: rgb(51, 204, 255);
 }
+.text--grey{
+    color: grey;
+}
 
 /* FORM */
 
@@ -96,7 +134,7 @@ body{
     outline:none !important;
     border-bottom: 1px double rgb(51, 204, 255);
 }
-.button--blue{
+.btn--blue{
     padding: 10px 20px;
     margin: 0 auto;
     margin-top:60px;

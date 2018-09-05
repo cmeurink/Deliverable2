@@ -20,7 +20,7 @@ body{
 .text--big{
     font-size: 150%;
 }
-.button--blue{
+.btn--blue{
     background-color: lightskyblue;
     border-radius: 26px;
     color: white;
