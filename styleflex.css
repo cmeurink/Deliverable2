@@ -20,24 +20,22 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.nav{
-    margin: 0 0.8em 0 0;
-    width: 100%;
-    display: flex;
-}
-.nav__container{
-}
+
 .logo{
-    justify-self: flex-start;
+    margin: 0 !important;
+    justify-self: center;
 }
 .nav__links{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     list-style-type: none;
+    padding: 20 0;
+    margin: 0;
 }
-
 .nav__link{
-    display: inline-flex;
-    justify-self: center;
-
+    padding: 0 20px;
 }
 
 .choice__options{
