@@ -96,7 +96,7 @@ body{
     outline:none !important;
     border-bottom: 1px double rgb(51, 204, 255);
 }
-.button-blue{
+.button--blue{
     padding: 10px 20px;
     margin: 0 auto;
     margin-top:60px;
