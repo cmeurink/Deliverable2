@@ -42,6 +42,8 @@ nav{
     display: inline;
     margin: 0 10px;
     border-radius: 26px;
+    transition: background-color 0.5s ease;
+    background-color: rgb(255, 255, 255);
 }
 .nav__link:hover{
     background-color: rgb(51, 204, 255);
@@ -65,6 +67,8 @@ nav{
     border-radius: 26px;    
     border: 1px solid rgb(51, 204, 255);
     color: rgb(51, 204, 255) !important;
+    transition: background-color 0.5s ease;
+    background-color: rgb(255, 255, 255);
 }
 .btn--white:hover{
     background-color: rgb(51, 204, 255);
@@ -90,6 +94,8 @@ nav{
     border: 1px solid rgb(173, 216, 230);
     border-radius: 5px;
     box-shadow: 0 0 10px rgb(173, 216, 230);
+    transition: background-color 0.5s ease;
+    background-color: rgb(255, 255, 255);
 }
 .choice__option:hover{
     background-color: rgb(135, 206, 250);
@@ -146,6 +152,7 @@ nav{
     border: 1px solid rgb(51, 204, 255);
     color: rgb(255, 255, 255) !important;
     box-shadow: 0px 0px 10px rgb(211, 211, 211);
+    transition: background-color 0.2s ease;
 }
 .btn--blue:hover{
     color: rgb(173, 216, 230) !important;
