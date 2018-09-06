@@ -1,3 +1,5 @@
+/* CSS GRID */
+
 /* RESET */
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -7,7 +9,25 @@ body{
     margin: 0;
     background-color: rgb(135, 206, 250);
 }
+
 /* MODIFIERS */
+.btn--blue{
+    background-color: rgb(135, 206, 250);
+    border-radius: 26px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 0 rgb(211, 211, 211);
+    justify-self: center;
+    width: fit-content;
+    border: 1px solid rgb(135, 206, 250);
+    padding: 10px 25px;
+    margin-top: 20px;
+    grid-column: 3;
+    transition: background-color 0.5s ease;
+}
+.btn--blue:hover{
+    color: rgb(173, 216, 230) !important;
+    background-color: rgb(255, 255, 255);
+}
 .text--center{
     text-align: center;
 }
@@ -25,6 +45,8 @@ body{
     border-radius: 26px;    
     border: 1px solid rgb(51, 204, 255);
     color: rgb(51, 204, 255) !important;
+    transition: background-color 0.5s ease;
+
 }
 .btn--white:hover{
     background-color: rgb(51, 204, 255);
@@ -67,6 +89,8 @@ nav{
     display: inline-grid;
     margin: 0 10px;
     border-radius: 26px;
+    transition: background-color 0.5s ease;
+
 }
 .nav__link:hover{
     background-color: rgb(51, 204, 255);
@@ -113,6 +137,7 @@ nav{
     border: 1px solid rgb(135, 206, 250);
     border-radius: 5px;
     padding: 20px;
+    transition: background-color 0.5s ease;
 }
 
 .choice__option:hover{
@@ -136,12 +161,12 @@ nav{
     grid-template-columns: repeat(5, 20%);
 }
 
-.choice__label{
+.form__label{
     grid-column: 2/5;
     font-weight: bold;
 }
 
-.choice__field{
+.form__field{
     grid-column: 2/5;
     border: none;
     padding: 5px 10px;
@@ -149,28 +174,9 @@ nav{
     border-bottom: 1px double rgb(0, 0, 0);
 }
 
-.choice__field:focus{
+.form__field:focus{
     outline:none !important;
     border-bottom: 1px double rgb(51, 204, 255);
-}
-
-.button--submit{
-    background-color: rgb(135, 206, 250);
-    border-radius: 26px;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0 10px 0 rgb(211, 211, 211);
-    justify-self: center;
-    width: fit-content;
-    border: 1px solid rgb(135, 206, 250);
-    padding: 10px 25px;
-    margin-top: 20px;
-    grid-column: 3;
-}
-
-.button--submit:hover{
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(135, 206, 250);
-    color: rgb(135, 206, 250);
 }
 
 /* FOOTER */
@@ -191,7 +197,6 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     list-style-type: none;
     align-items: center;
-
 }
 .footer__menu-item{
     justify-self: center;

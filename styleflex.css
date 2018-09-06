@@ -1,13 +1,17 @@
 /* FLEXBOX */
+
+/* RESET */
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5em;
 }
-a{
-    text-decoration: none;
-}
+
 body{
     background-color:rgb(240, 248, 255);
+}
+
+a{
+    text-decoration: none;
 }
 .main{
     background-color: rgb(255, 255, 255);
@@ -19,6 +23,49 @@ body{
     justify-content: center;
     flex-direction: column;
 }
+
+/* MODIFIERS */
+.btn--blue{
+    padding: 10px 20px;
+    margin: 0 auto;
+    margin-top:60px;
+    background-color: rgb(51, 204, 255);
+    border-radius: 26px;    
+    border: 1px solid rgb(51, 204, 255);
+    color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+    transition: background-color 0.2s ease;
+}
+.btn--blue:hover{
+    color: rgb(173, 216, 230) !important;
+    background-color: rgb(255, 255, 255);
+}
+.btn--white{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 26px;    
+    border: 1px solid rgb(51, 204, 255);
+    color: rgb(51, 204, 255) !important;
+    transition: background-color 0.5s ease;
+    background-color: rgb(255, 255, 255);
+}
+.btn--white:hover{
+    background-color: rgb(51, 204, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
+}
+.text--center{
+    text-align:center;
+}
+.text--blue{
+    color: rgb(51, 204, 255);
+}
+.text--grey{
+    color: rgb(128, 128, 128);
+}
+
+/* NAV */
 nav{
     margin: 0 100px;
     display: flex;
@@ -60,21 +107,15 @@ nav{
 .nav__link:hover a{
     color: rgb(255, 255, 255);
 }
-.btn--white{
-    padding: 0;
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    border-radius: 26px;    
-    border: 1px solid rgb(51, 204, 255);
-    color: rgb(51, 204, 255) !important;
-    transition: background-color 0.5s ease;
-    background-color: rgb(255, 255, 255);
+/* BIGDIV */
+.bigdiv{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    text-align:center;
 }
-.btn--white:hover{
-    background-color: rgb(51, 204, 255);
-    border: 1px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255) !important;
-}
+/* CHOICES */
 .choice__options{
     display: flex;
     flex-direction: row;
@@ -108,18 +149,9 @@ nav{
 .choice__option p{
     text-transform: capitalize;
 }
-.text--center{
-    text-align:center;
-}
-.text--blue{
-    color: rgb(51, 204, 255);
-}
-.text--grey{
-    color: rgb(128, 128, 128);
-}
+
 
 /* FORM */
-
 .choice__form{
     display: grid;
     flex-direction: column;
@@ -128,10 +160,10 @@ nav{
     margin: auto;
     padding: 50px 0;
 }
-.choice__label{
+.form__label{
     font-weight: bold;
 }
-.choice__field{
+.form__field{
     border: none;
     padding: 5px 10px;
     margin: 0;
@@ -139,25 +171,12 @@ nav{
     outline: none !important;
     border-bottom: 1px double rgb(0, 0, 0);
 }
-.choice__field:focus{
+.form__field:focus{
     outline:none !important;
     border-bottom: 1px double rgb(51, 204, 255);
 }
-.btn--blue{
-    padding: 10px 20px;
-    margin: 0 auto;
-    margin-top:60px;
-    background-color: rgb(51, 204, 255);
-    border-radius: 26px;    
-    border: 1px solid rgb(51, 204, 255);
-    color: rgb(255, 255, 255) !important;
-    box-shadow: 0px 0px 10px rgb(211, 211, 211);
-    transition: background-color 0.2s ease;
-}
-.btn--blue:hover{
-    color: rgb(173, 216, 230) !important;
-    background-color: rgb(255, 255, 255);
-}
+
+/* FOOTER */
 
 footer{
     background-color: aliceblue;  
@@ -170,10 +189,4 @@ footer{
     justify-content: space-evenly;
     flex-direction: row;
 }
-.bigdiv{
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-content:center;
-    text-align:center;
-}
+
